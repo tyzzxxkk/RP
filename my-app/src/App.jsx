@@ -15,11 +15,23 @@
 //     return <header><h2>헤더입니다</h2></header>
 //   }
   
-export default function App() {
-    return (
-    <div>
-        <header><h1>헤더</h1></header>
-        <footer><h1>푸터</h1></footer>
-    </div>
-    );
-}
+// export default function App() {
+//     return (
+//     <div>
+//         <header><h1>헤더</h1></header>
+//         <footer><h1>푸터</h1></footer>
+//     </div>
+//     );
+// }
+
+// import Greeting from "./components/Greeting"
+// import Button from "./components/Button"
+
+// export default function App() {
+//     return (
+//         <div>
+//             <Greeting name="태연"/>
+//             <Button text="확인"/>
+//         </div>
+//     )
+// }
