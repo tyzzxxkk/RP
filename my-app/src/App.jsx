@@ -2,6 +2,8 @@
 //   return <h1>Hello React</h1>
 // }
 
+// import { useState } from "react";
+
 // export default function App() {
 //   return <h1>안녕, 리액트!</h1>
 // }
@@ -58,5 +60,65 @@
 //     <button onClick={() => setIsOn(!isOn)}>
 //       {isOn ? "ON" : "OFF"}
 //     </button>
+//   );
+// }
+
+// import { useState } from "react";
+
+// export default function App() {
+//     const [text, setText] = useState("");
+//     return (
+//         <div>
+//             <input 
+//             type="text"
+//             placeholder="글자를 입력하세요"
+//             onChange={(e) => setText(e.taeget.value)}
+//             />
+//             <p>입력값 : {text}</p>
+//         </div>
+//     );
+// }
+
+// import { useState } from "react";
+
+// export default function LikeButton() {
+//   const [count, setCount] = useState(0);
+
+//   return (
+//     <button onClick={() => setCount(count + 1)}>
+//       👍 좋아요 {count}
+//     </button>
+//   );
+// }
+
+// import { useState } from "react";
+
+// export default function TodoApp() {
+//   const [todos, setTodos] = useState([]);
+//   const [input, setInput] = useState("");
+
+//   const addTodo = () => {
+//     if (input.trim() === "") return;
+//     setTodos([...todos, input]);  // 기존 리스트에 추가
+//     setInput(""); // 입력창 비우기
+//   };
+
+//   return (
+//     <div>
+//       <h2>할 일 목록</h2>
+//       <input 
+//         type="text" 
+//         value={input}
+//         placeholder="할 일을 입력하세요"
+//         onChange={(e) => setInput(e.target.value)} 
+//       />
+//       <button onClick={addTodo}>추가</button>
+
+//       <ul>
+//         {todos.map((todo, i) => (
+//           <li key={i}>{todo}</li>
+//         ))}
+//       </ul>
+//     </div>
 //   );
 // }
